@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pink Rose"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"
+        android:id="@+id/pink"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yellow Rose"
+        android:textSize="20sp"
+        android:layout_marginTop="10sp"
+        android:id="@+id/ylw"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blue Rose"
+        android:textSize="20sp"
+        android:layout_marginTop="10sp"
+        android:id="@+id/blue"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Red Rose"
+        android:textSize="20sp"
+        android:layout_marginTop="10sp"
+        android:id="@+id/red"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30sp"
+        android:id="@+id/img"
+        android:src="@drawable/ic_launcher_background"/>
+
+</LinearLayout>

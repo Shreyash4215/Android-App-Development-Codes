@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl1"
+        android:text="Enter 1st Number : "
+        android:textSize="20sp"
+        android:layout_marginTop="15sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt1"
+        android:layout_toEndOf="@id/lbl1"
+        android:layout_marginStart="10sp"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl2"
+        android:text="Enter 2nd Number : "
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/lbl1"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt2"
+        android:layout_below="@id/txt1"
+        android:layout_toEndOf="@id/lbl2"
+        android:layout_marginStart="7sp"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl3"
+        android:text="Addition of 2 : "
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/lbl2"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt3"
+        android:layout_below="@id/txt2"
+        android:layout_toEndOf="@id/lbl3"
+        android:layout_marginStart="50sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl3"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="30sp"
+        >
+        <TableRow android:weightSum="3">
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:text="ADD"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/clr"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:text="CLR"
+                android:layout_weight="1"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"/>
+            <Button
+                android:id="@+id/ext"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:text="EXT"
+                android:layout_weight="1"/>
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>
+</ScrollView>

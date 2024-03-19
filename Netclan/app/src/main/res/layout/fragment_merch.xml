@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".merchFrag">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- SearchView -->
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:queryHint="Search"
+            android:iconifiedByDefault="false"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/searchview_backgound"
+            android:queryBackground="@android:color/transparent"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chat_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="60sp"
+            android:layout_below="@id/searchView"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="-40sp"
+            android:id="@+id/imgvw"
+            android:layout_below="@id/chat_recycler_view"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt1"
+            android:textSize="20sp"
+            android:text="Your explore list is"
+            android:textStyle="bold"
+            android:textColor="#040C37"
+            android:layout_below="@+id/imgvw"
+            android:layout_marginLeft="82sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=" EMPTY"
+            android:textStyle="bold"
+            android:textColor="#FFD740"
+            android:layout_below="@+id/imgvw"
+            android:layout_toEndOf="@id/txt1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt2"
+            android:textSize="14sp"
+            android:text="Sorry, we could not find any user near you."
+            android:layout_below="@+id/txt1"
+            android:layout_marginTop="7sp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt3"
+            android:textSize="14sp"
+            android:text="Try incresing your search radius."
+            android:layout_below="@+id/txt2"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="300sp"
+            android:layout_height="40sp"
+            android:id="@+id/btn1"
+            android:layout_below="@id/txt3"
+            android:text="Increase Radius"
+            android:textColor="@color/white"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/savebutton_border"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn"
+            android:text="+"
+            android:background="@drawable/button_border"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="70sp"/>
+    </RelativeLayout>
+
+</FrameLayout>

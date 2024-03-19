@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="StyleSheet" >
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#3aa8c1</item>
+    </style>
+</resources>

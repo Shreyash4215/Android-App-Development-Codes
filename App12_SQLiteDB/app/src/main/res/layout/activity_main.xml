@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SQLite DB Demonstration"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_marginTop="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/roll"
+                android:text="Roll No"
+                android:textSize="20sp"
+                android:layout_below="@id/title"
+                android:layout_marginTop="10sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/troll"
+                android:layout_below="@id/title"
+                android:layout_toRightOf="@id/roll"
+                android:layout_marginLeft="10sp"
+                android:singleLine="true"
+                android:inputType="number"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textSize="20sp"
+                android:text="Name"
+                android:layout_below="@id/roll"
+                android:layout_marginTop="20sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tname"
+                android:layout_below="@id/troll"
+                android:layout_toEndOf="@id/name"
+                android:layout_marginLeft="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/age"
+                android:textSize="20sp"
+                android:text="Age"
+                android:layout_below="@id/name"
+                android:layout_marginTop="20sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/tage"
+                android:layout_below="@id/tname"
+                android:layout_toEndOf="@id/age"
+                android:layout_marginLeft="40sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:id="@+id/lnrl"
+                android:layout_marginTop="20sp"
+                android:layout_below="@id/age">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clr"
+                    android:text="CLEAR"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10sp"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/insrt"
+                    android:text="INSERT"
+                    android:textSize="15sp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:id="@+id/lnrl2"
+                android:layout_marginTop="15sp"
+                android:layout_below="@id/lnrl">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/upd"
+                    android:text="UPDATE"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10sp"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dlt"
+                    android:text="DELETE"
+                    android:textSize="15sp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5sp"
+                android:id="@+id/vw1"
+                android:layout_below="@id/lnrl2"
+                android:layout_marginTop="20sp"
+                android:background="@color/black"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ldall"
+                android:layout_below="@+id/vw1"
+                android:layout_marginTop="15sp"
+                android:textSize="20sp"
+                android:text="LOAD DATA INTO CURSOR"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lnrl3"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="15sp"
+                android:layout_below="@+id/ldall">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pre"
+                    android:text="PREVIOUS"
+                    android:layout_marginRight="10sp"
+                    android:textSize="15sp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nxt"
+                    android:text="NEXT"
+                    android:textSize="15sp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5sp"
+                android:id="@+id/vw2"
+                android:layout_marginTop="20sp"
+                android:layout_below="@+id/lnrl3"
+                android:background="@color/black"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="SHOW ALL DATA"
+                android:layout_below="@+id/vw2"
+                android:id="@+id/swall"
+                android:layout_marginTop="20sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5sp"
+                android:id="@+id/vw3"
+                android:layout_marginTop="15sp"
+                android:layout_below="@+id/swall"
+                android:background="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search By:"
+                android:textSize="15sp"
+                android:layout_marginTop="20sp"
+                android:id="@+id/srchby"
+                android:layout_below="@+id/vw3"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbgrp"
+                android:layout_below="@+id/vw3"
+                android:layout_toEndOf="@+id/srchby"
+                android:layout_marginLeft="10sp"
+                android:weightSum="3"
+                android:layout_marginTop="25sp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbroll"
+                    android:checked="true"
+                    android:text="Roll No"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbnme"
+                    android:text="Name"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbage"
+                    android:text="Age"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rslt"
+                android:text="SHOW SEARCH RESULT"
+                android:textSize="20sp"
+                android:layout_below="@+id/rbgrp"
+                android:layout_marginTop="10sp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ext"
+                android:text="EXIT"
+                android:textSize="20sp"
+                android:layout_below="@+id/rslt"
+                android:layout_marginTop="15sp"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

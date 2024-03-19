@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD1D1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/thed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:text="Hotel Rating System"
+        android:textColor="@color/orange"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rdg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thed"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="20sp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hot1"
+            android:text="UDUPI Hotel"
+            android:textColor="@color/material_dynamic_tertiary20"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback:"
+            android:layout_marginStart="30sp"
+            android:textSize="25sp"
+            android:textColor="@color/design_default_color_secondary_variant"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:text="Clean"
+            android:textSize="20sp"
+            android:textColor="@color/material_dynamic_tertiary20"
+            android:id="@+id/ch1"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch2"
+            android:layout_marginStart="30sp"
+            android:text="hygienic food"
+            android:textSize="20sp"
+            android:textColor="@color/material_dynamic_tertiary20"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch3"
+            android:layout_marginStart="30sp"
+            android:text="Good Quality"
+            android:textSize="20sp"
+            android:textColor="@color/material_dynamic_tertiary20"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hot2"
+            android:text="Ganesh Hotel"
+            android:textColor="@color/material_dynamic_tertiary20"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback:"
+            android:layout_marginStart="30sp"
+            android:textSize="25sp"
+            android:textColor="@color/design_default_color_secondary_variant"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:text="Clean"
+            android:textSize="20sp"
+            android:textColor="@color/material_dynamic_tertiary20"
+            android:id="@+id/ch4"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch5"
+            android:layout_marginStart="30sp"
+            android:text="hygienic food"
+            android:textSize="20sp"
+            android:textColor="@color/material_dynamic_tertiary20"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ch6"
+            android:layout_marginStart="30sp"
+            android:text="Good Quality"
+            android:textSize="20sp"
+            android:textColor="@color/material_dynamic_tertiary20"
+            />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sub"
+        android:text="Submit"
+        android:layout_below="@+id/rdg1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:textSize="30sp"/>
+
+
+</RelativeLayout>

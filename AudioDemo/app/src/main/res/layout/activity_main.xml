@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:text="Audio Control"
+        android:textSize="34sp"
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="151sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ply"
+        android:layout_margin="70sp"
+        android:text="Play"
+        android:textSize="25sp"
+        android:layout_below="@+id/txt"
+        />
+    <Button
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ps"
+        android:text="Pause"
+        android:textSize="25sp"
+        android:layout_below="@+id/ply"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stp"
+        android:text="Stop"
+        android:textSize="25sp"
+        android:layout_below="@+id/ps"
+        android:layout_marginTop="70sp"
+        android:layout_marginLeft="70sp"
+        />
+
+
+</RelativeLayout>

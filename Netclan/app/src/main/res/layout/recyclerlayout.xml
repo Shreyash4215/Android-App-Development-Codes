@@ -1,0 +1,197 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <RelativeLayout
+        android:layout_marginTop="16sp"
+        android:id="@+id/bubble_layout"
+        android:layout_width="match_parent"
+        android:layout_height="210sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginStart="30sp"
+        android:orientation="vertical"
+        android:background="@drawable/bubble"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/invitebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ INVITE"
+            android:layout_alignParentRight="true"
+            android:textColor="#121E32"
+            android:layout_margin="2sp"
+            android:textSize="14sp"
+            android:background="@drawable/custom_button_background"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shreyash Darade"
+            android:layout_marginTop="-12sp"
+            android:textStyle="bold"
+            android:textColor="#121E32"
+            android:layout_marginStart="70dp"
+            android:textSize="17sp"
+            android:layout_below="@+id/invitebtn"/>
+
+        <LinearLayout
+            android:id="@+id/lnrlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginStart="70sp"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="-2sp">
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:text="Baramati"
+                android:textColor="#121E32"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:text="|"
+                android:textColor="#121E32"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:text="Java Developer"
+                android:textColor="#121E32"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/dist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="5sp"
+            android:text="within 9.4 KM"
+            android:textStyle="bold"
+            android:textColor="#121E32"
+            android:textSize="15sp"
+            android:layout_below="@+id/lnrlay"/>
+
+        <ProgressBar
+            android:id="@+id/progresBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="140sp"
+            android:layout_height="12dp"
+            android:progressDrawable="@drawable/prgrsbar_bckgrnd"
+            android:layout_marginStart="70sp"
+            android:max="100"
+            android:progress="11"
+            android:layout_below="@+id/dist"
+            android:layout_marginTop="7sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/lnrlay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="30sp"
+            android:layout_below="@+id/progresBar">
+
+            <TextView
+                android:id="@+id/abt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:text="Coffe"
+                android:textStyle="bold"
+                android:textColor="#121E32"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:text="|"
+                android:textColor="#121E32"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/abt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:text="Business"
+                android:textStyle="bold"
+                android:textColor="#121E32"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:text="|"
+                android:textColor="#121E32"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/abt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:text="Friendship"
+                android:textStyle="bold"
+                android:textColor="#121E32"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/abt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi community! I am open to new connections"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="2sp"
+            android:textColor="#121E32"
+            android:layout_below="@+id/lnrlay2"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bubble2_layout"
+        android:layout_width="70sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="-180sp"
+        android:layout_marginStart="10sp"
+        android:background="@drawable/bubble2"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/bubble2_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#121E32"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

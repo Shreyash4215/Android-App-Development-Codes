@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="20sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amt"
+        android:text="Amount"
+        android:textSize="25sp"
+        android:layout_marginTop="30sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tamt"
+        android:textSize="25sp"
+        android:inputType="number"
+        android:layout_toEndOf="@+id/amt"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="25sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/intr"
+        android:layout_below="@+id/amt"
+        android:text="Intest"
+        android:textSize="25sp"
+        android:layout_marginTop="30sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tintr"
+        android:textSize="25sp"
+        android:inputType="number"
+        android:layout_toEndOf="@+id/intr"
+        android:layout_below="@+id/tamt"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="45sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/per"
+        android:layout_below="@+id/intr"
+        android:text="Period"
+        android:textSize="25sp"
+        android:layout_marginTop="30sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tper"
+        android:textSize="25sp"
+        android:inputType="number"
+        android:layout_toEndOf="@+id/per"
+        android:layout_below="@+id/tintr"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="40sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="Calculate Simple Intrest"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tper"
+        android:layout_marginTop="50sp"
+        android:id="@+id/btn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/si"
+        android:layout_marginTop="40sp"
+        android:layout_below="@+id/btn"
+        android:text="Simple Intrest"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tsi"
+        android:textSize="25sp"
+        android:inputType="number"
+        android:layout_toEndOf="@+id/si"
+        android:layout_below="@+id/btn"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="20sp"
+        android:enabled="false"
+        android:textStyle="bold"/>
+
+
+
+
+</RelativeLayout>
